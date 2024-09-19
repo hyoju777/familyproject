@@ -1,7 +1,7 @@
-package com.ohgiraffers.familystory;
+package com.ohgiraffers.familyapp;
 
-import com.ohgiraffers.familystory.Model.User;
-import com.ohgiraffers.familystory.Repository.UserRepository;
+import com.ohgiraffers.familyapp.Model.User;
+import com.ohgiraffers.familyapp.Repository.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;

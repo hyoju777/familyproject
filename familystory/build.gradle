@@ -18,15 +18,13 @@ repositories {
 }
 
 dependencies {
+	implementation 'io.springfox:springfox-boot-starter:3.0.0'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'javax.persistence:javax.persistence-api:2.2' // 또는 필요한 버전
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	implementation 'mysql:mysql-connector-java:8.0.33' // 버전 명시
+	runtimeOnly 'com.mysql:mysql-connector-java'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'org.springframework.security:spring-security-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
 }
 
 tasks.named('test') {
